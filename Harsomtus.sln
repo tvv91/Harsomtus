@@ -3,13 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harsomtus.Models", "Harsomtus.Models\Harsomtus.Models.csproj", "{786E04A7-3929-4D18-B77D-2774F8627B0D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Harsomtus.Models", "Harsomtus.Models\Harsomtus.Models.csproj", "{786E04A7-3929-4D18-B77D-2774F8627B0D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harsomtus.TagEditor", "Harsomtus.TagEditor\Harsomtus.TagEditor.csproj", "{A85CB8FF-CC82-472B-8863-9C3185631051}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Harsomtus.TagEditor", "Harsomtus.TagEditor\Harsomtus.TagEditor.csproj", "{A85CB8FF-CC82-472B-8863-9C3185631051}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harsomtus.AutoSorter", "Harsomtus.AutoSorter\Harsomtus.AutoSorter.csproj", "{B5CD10E2-49D6-4EBF-A5CC-8C678762E9BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Harsomtus.AutoSorter", "Harsomtus.AutoSorter\Harsomtus.AutoSorter.csproj", "{B5CD10E2-49D6-4EBF-A5CC-8C678762E9BD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harsomtus.UI", "Harsomtus.UI\Harsomtus.UI.csproj", "{F56B59EC-2745-4451-912F-158381AA6A2C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Harsomtus.UI", "Harsomtus.UI\Harsomtus.UI.csproj", "{F56B59EC-2745-4451-912F-158381AA6A2C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Harsomtus.Tests", "Harsomtus.Tests\Harsomtus.Tests.csproj", "{1ACB3F9F-8EA9-4596-BB91-E53AB07E516E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harsomtus.DataService", "Harsomtus.DataService\Harsomtus.DataService.csproj", "{1E392C56-A33E-4DBF-90A9-BE52AE8ACFD0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{F56B59EC-2745-4451-912F-158381AA6A2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F56B59EC-2745-4451-912F-158381AA6A2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F56B59EC-2745-4451-912F-158381AA6A2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1ACB3F9F-8EA9-4596-BB91-E53AB07E516E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1ACB3F9F-8EA9-4596-BB91-E53AB07E516E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1ACB3F9F-8EA9-4596-BB91-E53AB07E516E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1ACB3F9F-8EA9-4596-BB91-E53AB07E516E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E392C56-A33E-4DBF-90A9-BE52AE8ACFD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E392C56-A33E-4DBF-90A9-BE52AE8ACFD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E392C56-A33E-4DBF-90A9-BE52AE8ACFD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E392C56-A33E-4DBF-90A9-BE52AE8ACFD0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
