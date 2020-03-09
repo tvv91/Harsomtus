@@ -11,6 +11,7 @@
                 xmlns:vm="clr-namespace:Harsomtus.UI.ViewModels"
                 x:Key="Locator"
                 d:IsDataSource="True" />
+            <!--This is a bug https://github.com/dotnet/wpf/issues/2543-->
             <Style TargetType="Window"/>
         </ResourceDictionary>
     </Application.Resources>
