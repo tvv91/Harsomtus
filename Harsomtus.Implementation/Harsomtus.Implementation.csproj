@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Harsomtus.Models\Harsomtus.Models.csproj" />
+    <ProjectReference Include="..\Harsomtus.Services\Harsomtus.Services.csproj" />
+  </ItemGroup>
+
+</Project>

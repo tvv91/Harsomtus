@@ -1,0 +1,42 @@
+﻿<UserControl x:Class="Harsomtus.UI.Controls.NavigationControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:i="http://schemas.microsoft.com/xaml/behaviors">
+    <Grid>
+        <DockPanel LastChildFill="True" Grid.Row="2">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Button Command="{Binding FirstPage}"
+                        Content="First"
+                        Grid.Column="0"/>
+                <Button Command="{Binding PrevPage}"
+                        Content="Previous"
+                        Grid.Column="1"/>
+                <ComboBox Grid.Column="2" 
+                          ItemsSource="{Binding PageNumbers}"
+                          SelectedItem="{Binding SelectedPageNumber}">
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="DropDownClosed">
+                            <i:InvokeCommandAction Command="{Binding PageNumberSelected}" PassEventArgsToCommand="True"/>
+                        </i:EventTrigger>
+                        <i:EventTrigger EventName="PreviewMouseWheel">
+                            <i:InvokeCommandAction Command="{Binding PreviewMouseWheel}" PassEventArgsToCommand="True"/>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                </ComboBox>
+                <Button Command="{Binding NextPage}"
+                        Content="Next"
+                        Grid.Column="3"/>
+                <Button Command="{Binding LastPage}"
+                        Content="Last"
+                        Grid.Column="4"/>
+            </Grid>
+        </DockPanel>
+    </Grid>
+</UserControl>

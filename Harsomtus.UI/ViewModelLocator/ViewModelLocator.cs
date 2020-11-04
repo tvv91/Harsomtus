@@ -1,5 +1,4 @@
-﻿using Harsomtus.UI.ViewModels;
-using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.DependencyInjection;
 
 namespace Harsomtus.UI.ViewModels
 {

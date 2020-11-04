@@ -13,7 +13,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Harsomtus.UI", "Harsomtus.U
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Harsomtus.Tests", "Harsomtus.Tests\Harsomtus.Tests.csproj", "{1ACB3F9F-8EA9-4596-BB91-E53AB07E516E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harsomtus.DataService", "Harsomtus.DataService\Harsomtus.DataService.csproj", "{1E392C56-A33E-4DBF-90A9-BE52AE8ACFD0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Harsomtus.DataService", "Harsomtus.DataService\Harsomtus.DataService.csproj", "{1E392C56-A33E-4DBF-90A9-BE52AE8ACFD0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Harsomtus.Services", "Harsomtus.Services\Harsomtus.Services.csproj", "{A6E95C2B-83BF-46E1-8E89-7572C481CD68}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Harsomtus.Implementation", "Harsomtus.Implementation\Harsomtus.Implementation.csproj", "{DB3F6B64-7ADE-4A8A-8C86-C63AE645AD24}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harsomtus.Constants", "Harsomtus.Constants\Harsomtus.Constants.csproj", "{1B5406C8-9878-4A1D-A3D5-EE2E991AFD09}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +51,18 @@ Global
 		{1E392C56-A33E-4DBF-90A9-BE52AE8ACFD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1E392C56-A33E-4DBF-90A9-BE52AE8ACFD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1E392C56-A33E-4DBF-90A9-BE52AE8ACFD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6E95C2B-83BF-46E1-8E89-7572C481CD68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6E95C2B-83BF-46E1-8E89-7572C481CD68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6E95C2B-83BF-46E1-8E89-7572C481CD68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6E95C2B-83BF-46E1-8E89-7572C481CD68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB3F6B64-7ADE-4A8A-8C86-C63AE645AD24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB3F6B64-7ADE-4A8A-8C86-C63AE645AD24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB3F6B64-7ADE-4A8A-8C86-C63AE645AD24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB3F6B64-7ADE-4A8A-8C86-C63AE645AD24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B5406C8-9878-4A1D-A3D5-EE2E991AFD09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B5406C8-9878-4A1D-A3D5-EE2E991AFD09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B5406C8-9878-4A1D-A3D5-EE2E991AFD09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B5406C8-9878-4A1D-A3D5-EE2E991AFD09}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

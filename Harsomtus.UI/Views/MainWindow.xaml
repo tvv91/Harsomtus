@@ -4,10 +4,52 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Harsomtus.UI"
+        xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+        xmlns:uc="clr-namespace:Harsomtus.UI.Controls"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800"
-        DataContext="{Binding MainViewModel, Source={StaticResource Locator}}">
-    <Grid>
+        Title="Harsomtus"
+        DataContext="{Binding MainViewModel, Source={StaticResource Locator}}"
+        WindowStartupLocation="CenterScreen"
+        MinHeight="250"
+        MinWidth="250"
+        >
+    <Grid
+        local:SizeObserver.Observe="True"
+        local:SizeObserver.ObservedWidth="{Binding GridWidth, Mode=OneWayToSource}"
+        local:SizeObserver.ObservedHeight="{Binding GridHeight, Mode=OneWayToSource}">
+        <i:Interaction.Triggers>
+            <i:EventTrigger EventName="SizeChanged">
+                <i:InvokeCommandAction Command="{Binding WndSizeChanged}"/>
+            </i:EventTrigger>
+        </i:Interaction.Triggers>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="25" />
+        </Grid.RowDefinitions>
+        <uc:NavigationControl Grid.Row="2"></uc:NavigationControl>
+        <ListView ItemsSource="{Binding Albums}"
+                  SelectedItem="{Binding SelectedAlbum}"
+                  ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                  ScrollViewer.VerticalScrollBarVisibility="Hidden"
+                  >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <Image Source="{Binding CoverImage}"
+                               Width="200"
+                               Height="200"
+                               Stretch="UniformToFill"/>
+                        <Label Content="{Binding Title}"></Label>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+            <ListView.ItemsPanel>
 
+                <ItemsPanelTemplate>
+                    <WrapPanel IsItemsHost="True"
+                               Orientation="Horizontal"/>
+                </ItemsPanelTemplate>
+            </ListView.ItemsPanel>
+        </ListView>
     </Grid>
 </Window>
