@@ -1,10 +1,10 @@
-﻿using Harsomtus.Services;
+﻿using Harsomtus.Helpers;
 using NUnit.Framework;
 
 namespace Harsomtus.Tests.Service
 {
     [TestFixture]
-    public class ItemsCalculation
+    public class ItemsCalculationTest
     {
         /// <summary>
         /// Area size: 0x0

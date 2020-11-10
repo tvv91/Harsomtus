@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Harsomtus.Services
+namespace Harsomtus.Helpers
 {
     public static class ItemsCalc
     {

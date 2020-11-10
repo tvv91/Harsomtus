@@ -5,6 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="5.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Harsomtus.Models\Harsomtus.Models.csproj" />
     <ProjectReference Include="..\Harsomtus.Services\Harsomtus.Services.csproj" />
   </ItemGroup>
